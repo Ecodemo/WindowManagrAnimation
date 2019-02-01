@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_float_control"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:background="@android:color/darker_gray"
+    android:gravity="center_horizontal|bottom"
+    android:orientation="vertical">
+
+    <SeekBar
+        android:id="@+id/timeline"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:maxHeight="5.0dip"
+        android:minHeight="5.0dip"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingBottom="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:id="@+id/ibt_rewind"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/ibt_play"
+            android:layout_toStartOf="@+id/ibt_play"/>
+
+        <ImageButton
+            android:id="@+id/ibt_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:id="@+id/ibt_forward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/ibt_play"
+            android:layout_toRightOf="@+id/ibt_play"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
